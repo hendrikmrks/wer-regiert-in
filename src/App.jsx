@@ -1,5 +1,5 @@
 // App.jsx
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import GermanyMap from './components/GermanyMap';
 import './App.css';
 import {getLastPushTimestamp} from "./hooks/lastGithubPush.js";
@@ -8,15 +8,17 @@ function App() {
 
     const [lastUpdate, setLastUpdate] = useState(null);
 
-    getLastPushTimestamp('hendrikmrks/wer-regiert-in.de').then(timestamp => {
-        if (timestamp) {
-            const date = new Date(timestamp);
-            setLastUpdate(date.toLocaleString());
-            //console.log('Formatiertes Datum:', date.toLocaleString());
-        } else {
-            console.log('Konnte den Zeitstempel nicht abrufen.');
-        }
-    });
+    useEffect(() => {
+        getLastPushTimestamp('hendrikmrks/wer-regiert-in.de').then(timestamp => {
+            if (timestamp) {
+                const date = new Date(timestamp);
+                setLastUpdate(date.toLocaleString());
+                //console.log('Formatiertes Datum:', date.toLocaleString());
+            } else {
+                console.log('Konnte den Zeitstempel nicht abrufen.');
+            }
+        });
+    }, []);
 
     return (
     <div className="app">

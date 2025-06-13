@@ -7,7 +7,7 @@ const SeatsDiagram = ({state, colors}) => {
     const [isVisible, setIsVisible] = useState(false);
 
     // Chart-Größe als State
-    const [chartSize, setChartSize] = useState({ width: 700, height: 300 });
+    const [chartSize] = useState({ width: 700, height: 300 });
 
     // Nur Parteien mit Sitzen im Landtag anzeigen
     const data = state.seats.filter(party => party.seats > 0);

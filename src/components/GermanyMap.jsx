@@ -4,7 +4,6 @@ import statesData from "../data/statesData.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 import StateModal from "./StateModal.jsx";
 import useLoadGeoData from "../hooks/loadGeoData.jsx";
-import {getLastPushTimestamp} from "../hooks/lastGithubPush.js";
 
 const GermanyMap = () => {
   const [selectedState, setSelectedState] = useState(null);
