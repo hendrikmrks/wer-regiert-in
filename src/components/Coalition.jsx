@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {Card, Col, Row} from "react-bootstrap";
 
 const Coalition = ({state, colors}) => {
