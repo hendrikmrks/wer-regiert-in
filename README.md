@@ -1,37 +1,47 @@
 # Wer regiert in?
 
-![License](https://img.shields.io/github/license/hendrikmrks/wer-regiert-in.de)
-![Issues](https://img.shields.io/github/issues/hendrikmrks/wer-regiert-in.de)
-![Stars](https://img.shields.io/github/stars/hendrikmrks/wer-regiert-in.de)
-![Forks](https://img.shields.io/github/forks/hendrikmrks/wer-regiert-in.de)
+![License](https://img.shields.io/github/license/hendrikmrks/wer-regiert-in)
+![Issues](https://img.shields.io/github/issues/hendrikmrks/wer-regiert-in)
+![Stars](https://img.shields.io/github/stars/hendrikmrks/wer-regiert-in)
+![Forks](https://img.shields.io/github/forks/hendrikmrks/wer-regiert-in)
 
 This project visualizes the political landscape of Germany's federal states. It provides an interactive map where users can click on a state to view detailed information about its government, population, and ministries.
 
-## Demo
-
-You can view the page at [wer-regiert-in.de](wer-regiert-in.de)
+> The live site is no longer online. This repository is kept public for reference and as open source code.
 
 ## Table of Contents
 
+- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Planned Features](#planned-features)
 - [Contributing](#contributing)
 - [License](#license)
 
+## Project Structure
+
+- `/` – frontend (Vite)
+- `/api` – backend API that served the frontend (Express), formerly its own repository (`wer-regiert-in.de-api`), merged here for a single source
+
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/hendrikmrks/wer-regiert-in.de.git
+git clone https://github.com/hendrikmrks/wer-regiert-in.git
 
 # Navigate to the project directory
-cd wer-regiert-in.de
+cd wer-regiert-in
 
-# Install dependencies
+# Install frontend dependencies
 npm install
 
-# Start the development server
+# Start the frontend dev server
 npm run dev
+
+# In a separate terminal, run the API
+cd api
+npm install
+npm start
+```
 
 ## Planned Features
 
