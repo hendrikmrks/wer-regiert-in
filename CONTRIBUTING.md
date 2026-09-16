@@ -57,4 +57,4 @@ Open a [GitHub issue](https://github.com/hendrikmrks/wer-regiert-in/issues) with
 
 ## Questions
 
-Feel free to open an issue, or reach out at kontakt@hendrik-beier.de.
+Feel free to open an issue, or reach out at github@hendrik-beier.de.
